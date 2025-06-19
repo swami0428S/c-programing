@@ -1,14 +1,24 @@
-Execute the String Statement
+Volume of the shape
 
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
+#define PI 3.14159265359
 
 int main() {
-
-    char a[100];
-    scanf("%[^\n]s",a);
-    printf("Hai %s!\tWelcome to Programming Language...",a);
+    int l,b,h,r;
+    scanf("%d", &l);
+    scanf("%d", &b);
+    scanf("%d", &h);
+    scanf("%d", &r);
+    printf("Volume of Cubiod=%.2lf\n",(float)l*b*h);
+    printf("Volume of Cylinder=%.2lf\n",floor((PI*r*r*h)*100)/100);
+    printf("Volume of Cone=%.2lf\n",floor(( (PI*r*r*h)/3)*100)/100);
+    printf("Volume of Shpere=%.2lf\n",floor(((4.0/3.0)*PI*r*r*r)*100)/100);    
     return 0;
 }
+
+
+
+
