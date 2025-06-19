@@ -1,0 +1,19 @@
+Value Performance
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int a=4;
+    float b=5.678;
+    scanf("%d",&a);
+    scanf("%f",&b);
+    printf("%d\n",a);
+    printf("%.02f",b);
+    return 0;
+}
