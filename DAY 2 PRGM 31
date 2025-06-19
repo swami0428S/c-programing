@@ -1,0 +1,25 @@
+P2 - Green Lights
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    double s, d, t;
+    scanf("%lf", &s);  
+    scanf("%lf", &d);  
+    scanf("%lf", &t); 
+
+    double time_to_reach = (3600.0 * d) / s;  
+
+    if (time_to_reach < t) {
+        printf("Yes\n");
+    } else {
+        printf("No\n");
+    }
+
+    return 0;
+}
+
+
