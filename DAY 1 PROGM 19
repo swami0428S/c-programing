@@ -1,0 +1,16 @@
+FENCING THE GROUND
+
+#include<stdio.h>
+int main()
+{
+    int length,breadth,width;
+    float perimeter,area;
+    scanf("%d%d",&length,&breadth);
+    area=length*breadth;
+    width=area/length;
+    perimeter=2*(length+width);
+    printf("Required length is %.02fm\n",perimeter );
+    printf("Required quantity of carpet is %.02fsqm\n",area);
+
+    return 0;
+}
