@@ -1,0 +1,24 @@
+Decimal to Binary Converter 4
+
+  #include <stdio.h>
+
+int main() {
+    int number, binary[32], i = 0;
+    scanf("%d", &number);
+    if (number == 0) {
+        printf("Binary number is: 0\n");
+        return 0;
+    }
+    while (number > 0) {
+        binary[i] = number % 2;
+        number = number / 2;
+        i++;
+    }
+    printf("Binary number is: ");
+    for (int j = i - 1; j >= 0; j--) {
+        printf("%d", binary[j]);
+    }
+    printf("\n");
+
+    return 0;
+}
