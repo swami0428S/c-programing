@@ -1,0 +1,15 @@
+EVEN OR ODD
+
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    if((a/=2) && (a!=2)){
+        printf("The given input 6 is Even");
+    }
+    else{
+        printf("The given input 5 is Odd");
+    }
+      return 0;
+}
