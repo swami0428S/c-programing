@@ -1,0 +1,20 @@
+Area and Perimeter of Triangle
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int b,h;
+    float s1,s2,s3;
+    float area,peri;
+    scanf("%d%d",&b,&h);
+    scanf("%f%f%f",&s1,&s2,&s3);
+    area=0.5*(b*h);
+    peri=s1+s2+s3;
+    scanf("%f%f",&area,&peri);
+    printf("Area of Triangle is %.02f\n",area);
+    printf("Perimeter of Triangle is %.02f\n",peri);
+    return 0;
+}
