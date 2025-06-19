@@ -1,0 +1,32 @@
+VIVA ON ODD NUMBERS
+
+  #include <stdio.h>
+
+int main() {
+    int num;
+    int oddCount = 0;
+    float score = 0.0;
+
+    printf("Enter the numbers\n");
+
+    while (oddCount < 3) {
+        if (scanf("%d", &num) != 1) {
+            break; 
+        }
+
+        printf("%d\n", num);
+
+        if (num < 0) {
+            score -= 1;
+            break;
+        } else if (num % 2 == 1) {
+            score += 1;
+            oddCount++;
+        } else {
+            score -= 0.5;
+        }
+    }
+
+    printf("%.1f\n", score);
+    return 0;
+}
