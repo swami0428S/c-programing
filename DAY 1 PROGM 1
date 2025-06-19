@@ -1,0 +1,16 @@
+Execute the word with a Statement
+  
+ #include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+  char a[50];
+    scanf("%s",a);
+    printf("May I know how to learn %s!!!... ", a );
+    return 0;
+}
