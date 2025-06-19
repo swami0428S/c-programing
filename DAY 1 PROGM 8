@@ -1,0 +1,26 @@
+Math Functions
+
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    float a=76.78;
+    int b=16;
+    int c=2;
+    int d=3;
+    scanf("%f",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    scanf("%d",&d);
+    printf("%d\n",(int)a);
+    printf("%d\n",(b*5)-3 );
+    printf("%d\n",c*2);
+    printf("%d\n",d+5);   
+
+    return 0;
+}
