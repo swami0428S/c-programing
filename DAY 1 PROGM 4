@@ -1,0 +1,20 @@
+Decimal Formatting
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    float a;
+    a=34.12345;
+    scanf("%f",&a);
+    printf("%.05f\n",a);
+    printf("%.04f\n",a);
+    printf("%.03f\n",a);
+    printf("%.02f\n",a);
+    printf("%.01f\n",a);
+    printf("%d\n ",(int)a);
+    return 0;
+}
