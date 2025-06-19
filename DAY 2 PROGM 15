@@ -1,0 +1,20 @@
+Converting Number to String
+
+#include <stdio.h>
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    if (N >= 0 && N <= 9) {
+        char *words[] = {
+            "Zero", "One", "Two", "Three", "Four",
+            "Five", "Six", "Seven", "Eight", "Nine"
+        };
+
+        printf("Integer is %d and String is %s\n", N, words[N]);
+    } else {
+        printf("Invalid Input\n");
+    }
+
+    return 0;
+}
