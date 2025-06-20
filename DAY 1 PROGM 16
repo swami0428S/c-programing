@@ -1,4 +1,4 @@
-Wind chill factor
+
 
 #include <stdio.h>
 #include <math.h>
