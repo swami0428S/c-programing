@@ -1,0 +1,22 @@
+PRODUCT OF LIST
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main() {
+    int size, i;
+    float product = 1;
+    scanf("%d", &size);
+    for (i = 0; i < size; i++) {
+        int value;
+        scanf("%d", &value);
+        product *= value;
+    }
+    printf("The Product of list value is %.2f\n", product);
+
+    return 0;
+}
+  
