@@ -1,4 +1,4 @@
-Wall Painting
+
 
 #include <stdio.h>
 int main() {
