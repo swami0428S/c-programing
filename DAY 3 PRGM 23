@@ -1,0 +1,30 @@
+Queue
+
+#include <stdio.h>
+
+int main() {
+    int n, m;
+    scanf("%d", &n);
+    scanf("%d", &m);
+
+    int groups[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &groups[i]);
+    }
+
+    int bus_count = 1;
+    int current_load = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (current_load + groups[i] <= m) {
+            current_load += groups[i];
+        } else {
+            bus_count++;
+            current_load = groups[i];
+        }
+    }
+
+    printf("%d\n", bus_count);
+
+    return 0;
+}
