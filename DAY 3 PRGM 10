@@ -1,0 +1,43 @@
+Second Array Max And Min
+
+#include <stdio.h>
+#include <stdlib.h>
+int compare_desc(const void *a, const void *b) {
+    return (*(int*)b - *(int*)a);
+}
+int compare_asc(const void *a, const void *b) {
+    return (*(int*)a - *(int*)b);
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+
+    int arr[n];
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int even_count = (n + 1) / 2;  
+    int odd_count = n / 2;          
+
+    int even_arr[even_count];
+    int odd_arr[odd_count];
+    int e_idx = 0, o_idx = 0;
+    for(int i = 0; i < n; i++) {
+        if(i % 2 == 0) {
+            even_arr[e_idx++] = arr[i];
+        } else {
+            odd_arr[o_idx++] = arr[i];
+        }
+    }
+    qsort(even_arr, even_count, sizeof(int), compare_desc);
+    qsort(odd_arr, odd_count, sizeof(int), compare_asc);
+    int second_largest_even = even_arr[1];
+    int second_smallest_odd = odd_arr[1];
+
+    int sum = second_largest_even + second_smallest_odd;
+
+    printf("Sum=%d\n", sum);
+
+    return 0;
+}
